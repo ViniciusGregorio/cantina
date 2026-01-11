@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rotina de Cuidados - Pai</title>
+
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 16px;
+  color: #222;
+}
+
+h1, h2 {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.section {
+  background: #fff;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background: #2d6cdf;
+  color: #fff;
+}
+
+.time {
+  font-weight: bold;
+  background: #f0f0f0;
+}
+
+.resp {
+  font-size: 14px;
+  color: #444;
+}
+
+@media (max-width: 768px) {
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+
+  th {
+    display: none;
+  }
+
+  tr {
+    margin-bottom: 15px;
+  }
+
+  td {
+    text-align: left;
+    padding: 8px;
+  }
+
+  td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    display: block;
+    margin-bottom: 4px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<h1>🧠 Rotina de Cuidados do Pai</h1>
+
+<!-- ROTINA DIÁRIA -->
+<div class="section">
+  <h2>⏰ Rotina Diária</h2>
+
+  <table>
+    <tr>
+      <th>Horário</th>
+      <th>Tarefa</th>
+      <th>Responsável</th>
+    </tr>
+
+    <tr>
+      <td class="time" data-label="Horário">07:00</td>
+      <td data-label="Tarefa">Glicemia / Pressão / Saturação</td>
+      <td class="resp" data-label="Responsável">Irmão</td>
+    </tr>
+
+    <tr>
+      <td class="time" data-label="Horário">07:15</td>
+      <td data-label="Tarefa">Insulina (se prescrita)</td>
+      <td class="resp" data-label="Responsável">Irmão</td>
+    </tr>
+
+    <tr>
+      <td class="time" data-label="Horário">07:30</td>
+      <td data-label="Tarefa">Café da manhã + higiene oral</td>
+      <td class="resp" data-label="Responsável">Mãe</td>
+    </tr>
+
+    <tr>
+      <td class="time" data-label="Horário">08:00</td>
+      <td data-label="Tarefa">Remédios da manhã</td>
+      <td class="resp" data-label="Responsável">Irmão</td>
+    </tr>
+
+    <tr>
+      <td class="time" data-label="Horário">11:00</td>
+      <td data-label="Tarefa">Nova medição (glicemia/pressão)</td>
+      <td class="resp" data-label="Responsável">Irmão</td>
+    </tr>
+
+    <tr>
+      <td class="time" data-label="Horário">11:30</td>
+      <td data-label="Tarefa">Almoço</td>
+      <td class="resp" data-label="Responsável">Mãe</td>
+    </tr>
+
+    <tr>
+      <td class="time" data-label="Horário">12:00</td>
+      <td data-label="Tarefa">Insulina / remédios pós-refeição</td>
+      <td class="resp" data-label="Responsável">Irmão</td>
+    </tr>
+
+    <tr>
+      <td class="time" data-label="Horário">14:30</td>
+      <td data-label="Tarefa">Lanche</td>
+      <td class="resp" data-label="Responsável">Mãe</td>
+    </tr>
+
+    <tr>
+      <td class="time" data-label="Horário">15:00</td>
+      <td data-label="Tarefa">Banho + troca + mudança de decúbito</td>
+      <td class="resp" data-label="Responsável">Irmão + Mãe</td>
+    </tr>
+
+    <tr>
+      <td class="time" data-label="Horário">17:30</td>
+      <td data-label="Tarefa">Jantar</td>
+      <td class="resp" data-label="Responsável">Mãe</td>
+    </tr>
+
+    <tr>
+      <td class="time" data-label="Horário">18:00</td>
+      <td data-label="Tarefa">Remédios / Insulina</td>
+      <td class="resp" data-label="Responsável">Irmão</td>
+    </tr>
+
+    <tr>
+      <td class="time" data-label="Horário">21:00</td>
+      <td data-label="Tarefa">Chá + avaliação final</td>
+      <td class="resp" data-label="Responsável">Irmão</td>
+    </tr>
+  </table>
+</div>
+
+<!-- ESCALA SEMANAL -->
+<div class="section">
+  <h2>📅 Escala Semanal</h2>
+
+  <table>
+    <tr>
+      <th>Dia</th>
+      <th>Manhã</th>
+      <th>Tarde</th>
+      <th>Noite</th>
+    </tr>
+
+    <tr>
+      <td data-label="Dia">Seg–Sex</td>
+      <td data-label="Manhã">Irmão + Mãe</td>
+      <td data-label="Tarde">Mãe + Irmão</td>
+      <td data-label="Noite">Você + Irmã</td>
+    </tr>
+
+    <tr>
+      <td data-label="Dia">Sábado</td>
+      <td data-label="Manhã">Irmão + Mãe</td>
+      <td data-label="Tarde">Você + Irmã</td>
+      <td data-label="Noite">Rodízio</td>
+    </tr>
+
+    <tr>
+      <td data-label="Dia">Domingo</td>
+      <td data-label="Manhã">Você + Irmão</td>
+      <td data-label="Tarde">Mãe + Irmã</td>
+      <td data-label="Noite">Leve / Todos</td>
+    </tr>
+  </table>
+</div>
+
+</body>
+</html>
